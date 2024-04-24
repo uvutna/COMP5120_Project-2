@@ -1,0 +1,112 @@
+---
+title: "Projec2_Proposal_Group_H"
+author: "Vo_Phi_Son, Truong_Tuan_Vu, Nguyen_Minh_Tuong"
+date: "2024-04-23"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+# Proposal
+
+## High Level View
+We plan to create a data visualization that tells a story and convert it into an illustration, presenting both the computational and artistic aspects side by side. Our story is about visualizing and understanding different digital modulation schemes from their transmission data in Wireless Communication systems, and the role of modulation techniques in the evolution of wireless communication systems. Our artistic piece will be a 3D printed sculpture representing the insight into different digital communication schemes, along with building the Shiny App.
+
+## Motivation
+Although Claude Shannon's landmark paper "A Mathematical Theory of Communication [1]" has been out there for more than 50 years, the insight into how digital communication systems work is not widespread due to their complicated and counterintuitive working principles [2]. This is because of their heavy reliance on complex mathematical concepts and the continuous emergence of new theories. Consequently, communication theory can be a challenging discipline to master. Furthermore, developing an intuitive grasp of these concepts often requires significant time and effort. Moreover, the role of digital modulation techniques in the wireless communication evolution is very hard to understand if people only read the mathematical formulations. 
+
+Therefore, we will design visualizations that maximize accessibility while acknowledging and preserving the inherent mathematical complexities of the subject matter. More precisely, the working mechanisms and insights of various digital communication schemes are chosen in this project. We are interested in visualizing the working mechanism and performance of widely adopted but lesser-known communication schemes such as:
+
+1\. Binary phase shift keying
+
+2\. Quadrature phase shift keying
+
+3\. Quadrature amplitude modulation with different modulation levels
+
+It is our hope that this visualization project would enhance the interest and appreciation of our viewer for these concepts.
+
+## Research Questions
+### Research Question 1: 
+How does the choice of modulation scheme affect the performance of a wireless communication system?
+
+**Answer:** To answer this question, you can compare the performance of different modulation schemes in terms of key metrics such as bit error rate (BER), coding gain, and transmission rate.
+
+#### Methods of Answering:
+- **BER Analysis:** Use R to simulate communication systems employing different modulation schemes (e.g., Binary Phase Shift Keying (BPSK), Quadrature Phase Shift Keying (QPSK), Quadrature Amplitude Modulation (QAM)) and calculate the BER for each scheme. Plot the BER versus signal-to-noise ratio (SNR) curves for comparison.
+   
+- **Coding Gain Analysis:** Implement error-correcting codes (e.g., convolutional codes, turbo codes) along with different modulation schemes and analyze the coding gain achieved. Plot the improvement in BER with coding gain for each modulation scheme.
+   
+- **Transmission Rate Analysis:** Determine the achievable data rates for each modulation scheme considering channel bandwidth and noise characteristics. Plot the transmission rate versus SNR for different modulation schemes.
+
+#### Plot Charts:
+- **BER vs. SNR Curve:** Line plot showing the BER performance of each modulation scheme against varying SNR.
+- **Coding Gain vs. BER:** Scatter plot showing the relationship between coding gain and BER for different modulation schemes.
+- **Transmission Rate vs. SNR:** Bar or line plot showing the achievable data rates for each modulation scheme at different SNR levels.
+
+### Research Question 2: 
+How do different modulation schemes perform in terms of spectral efficiency and power efficiency?
+
+**Answer:** To answer this question, you can analyze the spectral and power efficiencies of various modulation schemes.
+
+#### Methods of Answering:
+- **Spectral Efficiency Analysis:** Calculate the spectral efficiency of each modulation scheme by measuring the data rate achieved per unit bandwidth. Plot the spectral efficiency versus SNR for comparison.
+   
+- **Power Efficiency Analysis:** Determine the power efficiency of each modulation scheme by analyzing the energy per bit required to achieve a certain BER. Plot the power efficiency versus SNR for different modulation schemes.
+   
+- **3D Visualization:** Use a 3D surface plot to visualize the trade-off between spectral and power efficiencies for different modulation schemes, considering varying SNR levels.
+
+#### Plot Charts:
+- **Spectral Efficiency vs. SNR:** Line plot showing the spectral efficiency of each modulation scheme against varying SNR.
+- **Power Efficiency vs. SNR:** Line plot showing the power efficiency of each modulation scheme against varying SNR.
+- **3D Surface Plot:** Three-dimensional surface plot showing the relationship between spectral efficiency, power efficiency, and SNR for different modulation schemes.
+
+## Data Collection
+We will collect the modulated data of these aforementioned schemes through the use of extensive Monte-Carlo simulations under different transmit power levels of transceivers, which is a practical consideration because most transceivers are battery-limited [3]. After data has been collected, we will visualize the corresponding insight regarding their effectiveness and start to make 3D printed sculptures.
+
+## Weekly Plan
+### Week 1 (12/04 - 14/04):
+- Brainstorm ideas for the project (Võ Phi Sơn, Trương Tuấn Vũ, Nguyễn Minh Tường)
+- Discuss the feasibility of visualizing digital modulation schemes (Võ Phi Sơn, Trương Tuấn Vũ, Nguyễn Minh Tường)
+
+### Week 2 (15/04 - 21/04):
+- Develop the project proposal (Võ Phi Sơn, Nguyễn Minh Tường)
+- Set up the structure for the repository (Trương Tuấn Vũ)
+- Research and gather resources on digital modulation schemes (Nguyễn Minh Tường, Võ Phi Sơn)
+
+### Week 3 (22/04 - 28/04):
+- Finalize and submit the project proposal (Võ Phi Sơn, Trương Tuấn Vũ)
+- Begin designing the Monte-Carlo simulations for data collection (Trương Tuấn Vũ, Nguyễn Minh Tường, Võ Phi Sơn)
+
+### Week 4 (29/04 - 05/05):
+- Conduct peer review on proposals (Võ Phi Sơn, Trương Tuấn Vũ, Nguyễn Minh Tường)
+- Implement and run Monte-Carlo simulations for data collection (Trương Tuấn Vũ, Nguyễn Minh Tường)
+
+### Week 5 (06/05 - 12/05):
+- Reply to reviews and update the proposal if needed (Võ Phi Sơn)
+- Analyze collected data and begin designing visualizations (Trương Tuấn Vũ, Nguyễn Minh Tường)
+
+### Week 6 (13/05 - 19/05):
+- Create visualizations for the selected digital modulation schemes (Trương Tuấn Vũ, Nguyễn Minh Tường)
+- Design the 3D printed sculpture concept based on the insights from the visualizations (Trương Tuấn Vũ)
+- Design the R Shiny app (Võ Phi Sơn)
+- Set up a meeting with the teaching team if additional help is needed (Võ Phi Sơn)
+
+### Week 7 (20/05 - 26/05):
+- Refine and finalize the visualizations (Trương Tuấn Vũ, Nguyễn Minh Tường, Võ Phi Sơn)
+- Create the 3D model for the sculpture and prepare it for printing (Trương Tuấn Vũ)
+- Design the R Shiny app (Võ Phi Sơn)
+- Begin drafting the project report (Võ Phi Sơn, Nguyễn Minh Tường)
+- Set up a meeting with the teaching team if additional help is needed (Võ Phi Sơn)
+
+### Week 8 (27/05 - 02/06):
+- Print the 3D sculpture (Trương Tuấn Vũ)
+- Finalize the project report (Võ Phi Sơn)
+- Finalize the R Shiny App (Võ Phi Sơn)
+- Prepare the presentation (Trương Tuấn Vũ)
+- Submit the final report and presentation (Võ Phi Sơn)
+
+## Reference
+[1] Shannon, Claude Elwood. "A mathematical theory of communication." The Bell system technical journal 27.3 (1948): 379-423.  
+[2] Tse, David, and Pramod Viswanath. Fundamentals of wireless communication. Cambridge university press, 2005.  
+[3] Tranter, William, et al. Principles of communication systems simulation with wireless applications. Prentice Hall Press, 2003.
+
