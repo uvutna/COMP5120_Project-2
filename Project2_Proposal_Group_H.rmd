@@ -32,33 +32,34 @@ How does the choice of modulation scheme affect the performance of a wireless co
 **Answer:** To answer this question, you can compare the performance of different modulation schemes in terms of key metrics such as bit error rate (BER), coding gain, and transmission rate.
 
 #### Methods of Answering:
-- **BER Analysis:** Use R to simulate communication systems employing different modulation schemes (e.g., Binary Phase Shift Keying (BPSK), Quadrature Phase Shift Keying (QPSK), Quadrature Amplitude Modulation (QAM)) and calculate the BER for each scheme. Plot the BER versus signal-to-noise ratio (SNR) curves for comparison.
+- **BER Analysis:** Use R and Matlab to simulate communication systems employing different modulation schemes (e.g., Binary Phase Shift Keying (BPSK), Quadrature Phase Shift Keying (QPSK), Quadrature Amplitude Modulation (QAM)) and calculate the BER for each scheme. Plot the BER versus signal-to-noise ratio (SNR) curves for comparison.
    
-- **Coding Gain Analysis:** Implement error-correcting codes (e.g., convolutional codes, turbo codes) along with different modulation schemes and analyze the coding gain achieved. Plot the improvement in BER with coding gain for each modulation scheme.
    
-- **Transmission Rate Analysis:** Determine the achievable data rates for each modulation scheme considering channel bandwidth and noise characteristics. Plot the transmission rate versus SNR for different modulation schemes.
+- **Bit Waveform Mapping Analysis:**  The difficult relationship between transmitted bit and their corresponding waveform is visualized to illustrate the special property of abrupt phase change which is an interesting phenomenon.
 
 #### Plot Charts:
 - **BER vs. SNR Curve:** Line plot showing the BER performance of each modulation scheme against varying SNR.
-- **Coding Gain vs. BER:** Scatter plot showing the relationship between coding gain and BER for different modulation schemes.
-- **Transmission Rate vs. SNR:** Bar or line plot showing the achievable data rates for each modulation scheme at different SNR levels.
+- **Bit Waveform Mapping Analysis:** Overlay plot between data stream and transmitted waveform.
+- **3D Surface Plot:** Three-dimensional surface plot showing the relationship between BER performance, energy efficiency, and SNR for different modulation schemes.
 
 ### Research Question 2: 
-How do different modulation schemes perform in terms of spectral efficiency and power efficiency?
+How do non-orthogonal multiple access schemes perform in terms of superposition coding, successive interference cancellation, and overall spectral efficiency ?
 
-**Answer:** To answer this question, you can analyze the spectral and power efficiencies of various modulation schemes.
+**Answer:** To answer this question, we first illustrate the superposition coding and successive interference cancellation procedure with some test data. Note that the data are presented as short bit stream to simplify the visualization. After that, we try to analyze the spectral efficiencies of non-orthogonal multiple access schemes compare to its orthogonal counterparts. 
 
 #### Methods of Answering:
-- **Spectral Efficiency Analysis:** Calculate the spectral efficiency of each modulation scheme by measuring the data rate achieved per unit bandwidth. Plot the spectral efficiency versus SNR for comparison.
+
+- **Superposition coding and successive interference cancellation:** Create serveral data diagram to illustrate these procedures.
+
+- **Spectral Efficiency Analysis:** Calculate the spectral efficiency of non-orthogonal multiple access scheme by measuring the data rate achieved per unit bandwidth. Particularly the unit is bit per second per Hertz. Plot the spectral efficiency versus SNR between non-orthogonal multiple access schemes and orthogonal multiple access schemes for comparison.
    
-- **Power Efficiency Analysis:** Determine the power efficiency of each modulation scheme by analyzing the energy per bit required to achieve a certain BER. Plot the power efficiency versus SNR for different modulation schemes.
+
    
-- **3D Visualization:** Use a 3D surface plot to visualize the trade-off between spectral and power efficiencies for different modulation schemes, considering varying SNR levels.
 
 #### Plot Charts:
-- **Spectral Efficiency vs. SNR:** Line plot showing the spectral efficiency of each modulation scheme against varying SNR.
-- **Power Efficiency vs. SNR:** Line plot showing the power efficiency of each modulation scheme against varying SNR.
-- **3D Surface Plot:** Three-dimensional surface plot showing the relationship between spectral efficiency, power efficiency, and SNR for different modulation schemes.
+- **Spectral Efficiency vs. SNR:** Line plot showing the spectral efficiency of multiple access scheme against varying SNR.
+
+
 
 ## Data Collection
 We will collect the modulated data of these aforementioned schemes through the use of extensive Monte-Carlo simulations under different transmit power levels of transceivers, which is a practical consideration because most transceivers are battery-limited [3]. After data has been collected, we will visualize the corresponding insight regarding their effectiveness and start to make 3D printed sculptures.
