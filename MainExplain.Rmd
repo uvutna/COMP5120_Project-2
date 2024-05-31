@@ -32,6 +32,8 @@ Question 2: How do non-orthogonal multiple access scheme perform in terms of sup
 
 The Shiny apps is at this web link: https://sonvo.shinyapps.io/project2/
 
+For better visualization, we also create a 3D hologram for the bit error rate vs Eb/No vs modulation level plot.
+
 
 ### Justification of approach
 
